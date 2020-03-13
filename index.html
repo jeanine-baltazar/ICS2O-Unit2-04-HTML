@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html lang="en-ca">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"content="Webpage with event listeners!">
+      <meta name="keywords"content= "Hello, World!">
+      <meta name="author"content= "Jeanine Baltazar">
+      <meta name="viewport"content="width=device-width, initial-scale=1.0">
+      <title>Jeanine's Webpage</title>
+      <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+      <h1>My Webpage</h1>
+      <p>This webpage will include a message, a background color, a button, a text box, an event listener and an alert! Click the button to erase the value inside the text box. You will then recieve a Hello, World alert.</p>
+      <button onclick="alerts()">Click Me!</button>
+      <input type="text" id="input" value="Hello, World!">
+      <script>
+          function alerts() {
+            document.getElementById("input").value = '';
+            alert("Hello, World!");
+          }
+      </script>
+    </body>
+</html>
